@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Урок 42</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <form class="form">
+            <fieldset class="form__group">
+                <legend class="form__title">Ваши личные данные</legend>
+                <label class="form__label">
+                    Ваше имя<span>*</span>
+                    <input
+                        class="form__input"
+                        type="text"
+                        placeholder="Имя"
+                        name="name"
+                        required
+                    />
+                </label>
+
+                <label for="age" class="form__label">
+                    Ваш возраст<span>*</span>
+                    <input
+                        id="age"
+                        class="form__input"
+                        type="number"
+                        inputmode="numeric"
+                        placeholder="Возраст"
+                        name="age"
+                        required
+                    />
+                </label>
+
+                <label for="tel" class="form__label">
+                    Ваш номер телефона<span>*</span>
+                    <input
+                        id="tel"
+                        class="form__input"
+                        type="tel"
+                        inputmode="tel"
+                        placeholder="Номер телефона"
+                        name="phone"
+                        required
+                    />
+                </label>
+
+                <label for="email" class="form__label">
+                    Ваша почта<span>*</span>
+                    <input
+                        id="email"
+                        class="form__input"
+                        type="email"
+                        inputmode="email"
+                        placeholder="Почта"
+                        name="email"
+                        required
+                    />
+                </label>
+            </fieldset>
+            <fieldset class="form__group">
+                <label for="message" class="form__label">
+                    Сообщение<span>*</span>
+                    <textarea
+                        id="message"
+                        class="form__textarea"
+                        placeholder="Сообщение"
+                        name="message"
+                        required
+                    ></textarea>
+                </label>
+
+                <label class="form__label form__label_checkbox">
+                    <input
+                        class="form__checkbox"
+                        name="checkbox"
+                        type="checkbox"
+                        required
+                    />
+                    Я принимаю <a href="#">правила</a><span>*</span>
+                </label>
+            </fieldset>
+            <button class="form__button" type="submit">отправить</button>
+        </form>
+    </body>
+</html>
