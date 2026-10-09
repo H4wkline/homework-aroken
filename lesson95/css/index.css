@@ -18,6 +18,10 @@
     align-items: center;
     gap: 28px;
 }
+
+.hero__info {
+    max-width: 492px;
+}
 .hero__title {
     margin-bottom: 40px;
     max-width: 492px;
@@ -30,6 +34,7 @@
 
 .hero__text {
     margin-bottom: 140px;
+    max-width: 440px;
 }
 
 .button {
@@ -211,6 +216,9 @@ details > p {
         margin-bottom: 30px;
     }
 
+    .news__title {
+        text-align: center;
+    }
     .news__articles {
         flex-wrap: wrap;
         justify-content: center;
@@ -228,6 +236,10 @@ details > p {
 
     .faq::before {
         display: none;
+    }
+
+    .faq__title {
+        text-align: center;
     }
 
     .faq__wrap {
